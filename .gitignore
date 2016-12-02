@@ -9,5 +9,8 @@ obj/
 # MonoDevelop config files
 *.userprefs
 
+# Visual Studio directory
+.vs/
+
 # Nuget package directory
 packages/

@@ -1,17 +1,28 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "urk", "src\urk.fsproj", "{2CE25F41-F78B-475C-BEDC-BE435ACE305A}"
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "urk.console", "urk.console\urk.console.fsproj", "{4B47C512-A99F-4F11-BB59-2FABDF0253C2}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "urk", "urk\urk.fsproj", "{310DABE8-D624-4B98-A986-86CE1F7988D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2CE25F41-F78B-475C-BEDC-BE435ACE305A}.Debug|x86.ActiveCfg = Debug|x86
-		{2CE25F41-F78B-475C-BEDC-BE435ACE305A}.Debug|x86.Build.0 = Debug|x86
-		{2CE25F41-F78B-475C-BEDC-BE435ACE305A}.Release|x86.ActiveCfg = Release|x86
-		{2CE25F41-F78B-475C-BEDC-BE435ACE305A}.Release|x86.Build.0 = Release|x86
+		{4B47C512-A99F-4F11-BB59-2FABDF0253C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B47C512-A99F-4F11-BB59-2FABDF0253C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B47C512-A99F-4F11-BB59-2FABDF0253C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B47C512-A99F-4F11-BB59-2FABDF0253C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{310DABE8-D624-4B98-A986-86CE1F7988D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{310DABE8-D624-4B98-A986-86CE1F7988D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{310DABE8-D624-4B98-A986-86CE1F7988D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{310DABE8-D624-4B98-A986-86CE1F7988D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
