@@ -2,5 +2,12 @@
 *~
 \#*#
 
+# Build result directory
+bin/
+obj/
+
+# MonoDevelop config files
+*.userprefs
+
 # Nuget package directory
 packages/
