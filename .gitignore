@@ -1,0 +1,6 @@
+# Emacs Temporary files
+*~
+\#*#
+
+# Nuget package directory
+packages/
