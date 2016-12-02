@@ -6,11 +6,15 @@
     "tasks": [
         {
             "taskName": "build",
-            "args": [
-                "${workspaceRoot}\\project.json"
-            ],
-            "isBuildCommand": true,
-            "problemMatcher": "$msCompile"
+            "showOutput": "always",
+            "windows": {
+                "command": "C:\\Program Files (x86)\\MSBuild\\14.0\\Bin\\MSBuild.exe",
+                "args": [ "$(workspaceRoot)\\urk.sln" ]
+            },
+            "linux": {
+                "command": "/usr/bin/xbuild",
+                "args": [ "$(workspaceRoot)/urk.sln" ]
+            }
         }
     ]
 }

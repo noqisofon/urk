@@ -17,3 +17,6 @@ obj/
 
 # Nuget package directory
 packages/
+
+# Other
+*.log
