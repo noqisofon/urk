@@ -6,8 +6,8 @@
         "compilerName": "fsc",
         "compile": {
             "includeFiles": [
-                "src/Urk/ast.fs",
-                "src/Urk/parser.fs"
+                "urk/Urk/ast.fs",
+                "urk/Urk/parser.fs"
             ]
         }
     },

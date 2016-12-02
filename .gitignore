@@ -12,5 +12,8 @@ obj/
 # Visual Studio directory
 .vs/
 
+# dotnet restore file
+*.lock.json
+
 # Nuget package directory
 packages/
