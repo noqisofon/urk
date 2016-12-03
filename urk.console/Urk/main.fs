@@ -1,4 +1,6 @@
-﻿open Urk.Cli
+﻿module Urk.Console
+
+open Urk.Cli
 
 [<EntryPoint>]
 let main argv =

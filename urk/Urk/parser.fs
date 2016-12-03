@@ -1,6 +1,6 @@
 module Urk.Parser
 
-open FParser
+open FParsec
 
 let ws = spaces
 let str s = pstring s

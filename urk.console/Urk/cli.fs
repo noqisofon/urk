@@ -70,4 +70,4 @@ let parsed_args_or_exception args =
   with | ex -> Choice2Of2( ex )
 
 let print_usage (parser : ArgumentParser<UrkArg>) =
-  printfn ( parser.PrintUsage() )
+   parser.PrintUsage()
