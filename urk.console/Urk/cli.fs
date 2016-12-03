@@ -1,5 +1,7 @@
 module Urk.Cli
 
+open System
+
 open Argu
 
 type LintMode =
@@ -70,4 +72,4 @@ let parsed_args_or_exception args =
   with | ex -> Choice2Of2( ex )
 
 let print_usage (parser : ArgumentParser<UrkArg>) =
-   parser.PrintUsage()
+  Console.WriteLine( parser.PrintUsage() )
