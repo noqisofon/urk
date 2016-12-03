@@ -1,0 +1,13 @@
+version: 0.1.0
+buildOptions:
+  debugType: portable
+  emitEntryPoint: true
+  compilerName:
+    windows: fsc
+    linux: fsharpc
+  compile:
+    includeFiles:
+      - AssemblyInfo.fs
+      - ast.fs
+      - parser.fs
+
