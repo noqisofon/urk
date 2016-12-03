@@ -7,6 +7,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "urk.console", "urk.console\
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "urk", "urk\urk.fsproj", "{310DABE8-D624-4B98-A986-86CE1F7988D0}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "tests.urk.console", "tests.urk.console\tests.urk.console.fsproj", "{8AC9F167-3E71-4927-916F-73ADDFC3B320}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{310DABE8-D624-4B98-A986-86CE1F7988D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{310DABE8-D624-4B98-A986-86CE1F7988D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{310DABE8-D624-4B98-A986-86CE1F7988D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AC9F167-3E71-4927-916F-73ADDFC3B320}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AC9F167-3E71-4927-916F-73ADDFC3B320}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AC9F167-3E71-4927-916F-73ADDFC3B320}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AC9F167-3E71-4927-916F-73ADDFC3B320}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
