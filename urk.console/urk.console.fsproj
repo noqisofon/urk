@@ -7,7 +7,7 @@
     <ProjectGuid>{4B47C512-A99F-4F11-BB59-2FABDF0253C2}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>urk.console</RootNamespace>
-    <AssemblyName>urk.console</AssemblyName>
+    <AssemblyName>urk</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFSharpCoreVersion>4.4.0.0</TargetFSharpCoreVersion>
