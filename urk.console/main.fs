@@ -1,7 +1,6 @@
-﻿// F# の詳細については、http://fsharp.org を参照してください
-// 詳細については、'F# チュートリアル' プロジェクトを参照してください。
+﻿open Urk.Cli
 
 [<EntryPoint>]
-let main argv = 
-    printfn "%A" argv
-    0 // 整数の終了コードを返します
+let main argv =
+  let results = parsed_args_or_exception argv
+  0

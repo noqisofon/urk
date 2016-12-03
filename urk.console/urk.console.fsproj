@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>4b47c512-a99f-4f11-bb59-2fabdf0253c2</ProjectGuid>
+    <ProjectGuid>{4B47C512-A99F-4F11-BB59-2FABDF0253C2}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>urk.console</RootNamespace>
     <AssemblyName>urk.console</AssemblyName>
@@ -58,25 +57,24 @@
     <Compile Include="main.fs" />
     <None Include="App.config" />
     <Content Include="packages.config" />
+    <Compile Include="cli.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Argu">
       <HintPath>..\packages\Argu.3.3.0\lib\net40\Argu.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="mscorlib" />
-    <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
+    <Reference Include="FSharp.Core">
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\urk\urk.fsproj">
       <Name>urk</Name>
-      <Project>{310dabe8-d624-4b98-a986-86ce1f7988d0}</Project>
-      <Private>True</Private>
+      <Project>{310DABE8-D624-4B98-A986-86CE1F7988D0}</Project>
     </ProjectReference>
   </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
