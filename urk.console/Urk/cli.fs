@@ -20,7 +20,6 @@ type UrkArg =
   | [<AltCommandLine("-e")>] Source              of string
   | [<AltCommandLine("-E")>] Exec                of string
   | [<AltCommandLine("-g")>] Gen_Pot
-  | [<AltCommandLine("-h")>] Help
   | [<AltCommandLine("-i")>] Include             of string
   | [<AltCommandLine("-l")>] Load                of string
   | [<AltCommandLine("-M")>] Bignum
@@ -49,7 +48,6 @@ type UrkArg =
          | Source _               -> ""
          | Exec _                 -> ""
          | Gen_Pot                -> ""
-         | Help                   -> ""
          | Include _              -> ""
          | Load _                 -> ""
          | Bignum                 -> ""
@@ -64,12 +62,20 @@ type UrkArg =
          | Lint _                 -> ""
          | Version                -> ""
 
-let parsed_args_or_exception args =
+let create_parser () =
+  ArgumentParser.Create<UrkArg>()
+
+let parsed_args_or_exception (parser : ArgumentParser<UrkArg>) (args : string[]) =
   try
     let args   = args |> Seq.skip 1 |> Array.ofSeq in
-    let parser = ArgumentParser.Create<UrkArg>() in
     Choice1Of2( parser.Parse( args ) )
   with | ex -> Choice2Of2( ex )
 
+let print_line (text : string) =
+  Console.WriteLine( text )
+
+let print_version () =
+  print_line "urk 0.1.0"
+
 let print_usage (parser : ArgumentParser<UrkArg>) =
-  Console.WriteLine( parser.PrintUsage() )
+  print_line ( parser.PrintUsage() )
