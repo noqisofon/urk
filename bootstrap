@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+
+nuget install -solutionDirectory . NUnit.Console
+nuget install -solutionDirectory . ./tests.urk.console/packages.config
+nuget install -solutionDirectory . ./urk.console/packages.config
+nuget install -solutionDirectory . ./urk/packages.config
+
+find ./packages -name '*.exe' -print -exec chmod +x {} \;
